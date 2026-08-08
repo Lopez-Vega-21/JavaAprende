@@ -1,14 +1,20 @@
-/**
- * Reto 9: Área de un Triángulo
- * Descripción: Solicitar la base y altura, y calcular el área.
- */
 import java.util.Scanner;
 
 public class AreaTriangulo {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        // TODO: Solicitar base y altura
-        // TODO: Calcular el área ((base * altura) / 2)
-        // TODO: Imprimir resultado
+
+        // 1. Solicitar base y altura
+        System.out.print("Ingresa la base del triángulo: ");
+        double base = teclado.nextDouble();
+
+        System.out.print("Ingresa la altura del triángulo: ");
+        double altura = teclado.nextDouble();
+
+        // 2. Calcular el área
+        double area = (base * altura) / 2;
+
+        // 3. Imprimir resultado
+        System.out.println("El área del triángulo es: " + area);
     }
 }
