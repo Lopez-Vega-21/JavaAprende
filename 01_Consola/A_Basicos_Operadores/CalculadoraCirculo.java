@@ -1,20 +1,23 @@
 import java.util.Scanner;
 
-public class CalculadoraEdad {
+public class CalculadoraCirculo {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-
-        // 1. Solicitar la edad
-        System.out.print("Ingresa tu edad en años: ");
-        int edad = teclado.nextInt();
-
-        // 2. Cálculos y 3. Mostrar los resultados
-        System.out.println("Décadas: " + (edad / 10));
-        System.out.println("Lustros: " + (edad / 5));
-        System.out.println("Meses: " + (edad * 12));
-        System.out.println("Semanas: " + (edad * 52));
-        System.out.println("Días: " + (edad * 365));
-        System.out.println("Horas: " + (edad * 8760));
-        System.out.println("Minutos: " + (edad * 525600));
+        
+        // Solicitar el radio
+        System.out.print("Introduce el radio del círculo: ");
+        double radio = teclado.nextDouble();
+        
+        // Calcular el perímetro (2 * PI * radio)
+        double perimetro = 2 * Math.PI * radio;
+        
+        // Calcular el área (PI * radio^2)
+        double area = Math.PI * Math.pow(radio, 2);
+        
+        // Mostrar los resultados
+        System.out.println("El perímetro es: " + perimetro);
+        System.out.println("El área es: " + area);
+        
+        teclado.close();
     }
 }
