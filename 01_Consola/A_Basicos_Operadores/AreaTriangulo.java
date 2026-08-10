@@ -17,4 +17,4 @@ public class AreaTriangulo {
         // 3. Imprimir resultado
         System.out.println("El área del triángulo es: " + area);
     }
-}
+}<
