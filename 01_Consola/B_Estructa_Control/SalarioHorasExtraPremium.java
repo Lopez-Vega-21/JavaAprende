@@ -1,14 +1,20 @@
-/**
- * Reto 9: Obrero Premium
- * Descripción: <=40 horas a $50/h. >40 horas: se paga base + $70 por hora adicional.
- */
 import java.util.Scanner;
 
 public class SalarioHorasExtraPremium {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        // TODO: Solicitar horas totales
-        // TODO: Calcular salario aplicando cuota normal y de exceso
-        // TODO: Mostrar salario total
+        
+        System.out.print("Ingrese el total de horas trabajadas: ");
+        int horasTotales = teclado.nextInt();
+        int salarioTotal;
+        
+        if (horasTotales <= 40) {
+            salarioTotal = horasTotales * 50;
+        } else {
+            int horasAdicionales = horasTotales - 40;
+            salarioTotal = (40 * 50) + (horasAdicionales * 70);
+        }
+        
+        System.out.println("El salario total es: $" + salarioTotal);
     }
 }
