@@ -1,14 +1,20 @@
-/**
- * Reto 1: Máximo de cinco números
- * Descripción: Solicite cinco números y determine cuál es el mayor de todos.
- */
 import java.util.Scanner;
 
 public class MaximoDeCinco {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        // TODO: Solicitar 5 números al usuario
-        // TODO: Comparar mediante IFs para encontrar el mayor
-        // TODO: Imprimir el número mayor
+        
+        System.out.print("Ingresa 5 números enteros:\nNúmero 1: ");
+        int mayor = teclado.nextInt();
+        
+        for (int i = 2; i <= 5; i++) {
+            System.out.print("Número " + i + ": ");
+            int actual = teclado.nextInt();
+            if (actual > mayor) {
+                mayor = actual;
+            }
+        }
+        
+        System.out.println("El número mayor de todos es: " + mayor);
     }
 }
