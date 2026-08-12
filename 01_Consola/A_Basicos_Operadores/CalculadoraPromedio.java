@@ -1,7 +1,3 @@
-/**
- * EJERCICIO GUIADO 1 
- * Tema: Entrada de datos múltiples y jerarquía de operadores.
- */
 import java.util.Scanner; 
 
 public class CalculadoraPromedio {
