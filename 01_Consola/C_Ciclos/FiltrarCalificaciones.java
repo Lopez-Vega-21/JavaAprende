@@ -1,13 +1,19 @@
-/**
- * Reto 5: Calificaciones Aprobatorias
- * Descripción: Leer 10 calificaciones, aceptando únicamente las que estén entre 6 y 10.
- */
 import java.util.Scanner;
 
 public class FiltrarCalificaciones {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        // TODO: Bucle para procesar 10 ingresos
-        // TODO: Si la calificación está entre 6 y 10, guardarla/contarla
+        int contadorAprobatorias = 0;
+        
+        for (int i = 1; i <= 10; i++) {
+            System.out.print("Ingrese la calificación " + i + ": ");
+            double calificacion = teclado.nextDouble();
+            
+            if (calificacion >= 6 && calificacion <= 10) {
+                contadorAprobatorias++;
+            }
+        }
+        
+        System.out.println("Cantidad de calificaciones aprobatorias (entre 6 y 10): " + contadorAprobatorias);
     }
 }
