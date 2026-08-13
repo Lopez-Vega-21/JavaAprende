@@ -1,8 +1,3 @@
-/**
- * RETO DEL GIMNASIO DE CÓDIGO (GUI - Nivel 3)
- * Reto 9: Buscador de Números Primos del 1 al 100
- */
-
 import javax.swing.*;
 import java.awt.FlowLayout;
 
