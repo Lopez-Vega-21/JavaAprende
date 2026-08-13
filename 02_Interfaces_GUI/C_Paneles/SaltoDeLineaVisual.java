@@ -1,8 +1,3 @@
-/**
- * RETO DEL GIMNASIO DE CÓDIGO (GUI - Nivel 3)
- * Reto 10: Números del 1 al 30 con salto de línea cada 7
- */
-
 import javax.swing.*;
 import java.awt.FlowLayout;
 
