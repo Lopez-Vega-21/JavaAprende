@@ -23,9 +23,12 @@ public class SaltoDeLineaVisual extends JFrame {
         btnGenerar.addActionListener(e -> {
             areaResultados.setText("");
             
-            // TODO: Bucle del 1 al 30
-            // TODO: areaResultados.append(i + " ");
-            // TODO: Usar if (i % 7 == 0) para hacer areaResultados.append("\n");
+            for (int i = 1; i <= 30; i++) {
+    areaResultados.append(i + " ");
+    if (i % 7 == 0) {
+        areaResultados.append("\n");
+    }
+}
         });
         
         add(btnGenerar); add(new JScrollPane(areaResultados));
