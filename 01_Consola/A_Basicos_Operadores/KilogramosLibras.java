@@ -1,16 +1,14 @@
+/**
+ * Reto 11: Kilogramos a Libras
+ * Descripción: Convertir kilogramos a libras (1 kg = 2.2 libras).
+ */
 import java.util.Scanner;
 
 public class KilogramosLibras {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        
-        System.out.print("Ingresa el peso en kilogramos: ");
-        double kilos = teclado.nextDouble();
-        
-        double libras = kilos * 2.2;
-        
-        System.out.println(kilos + " kg equivalen a " + libras + " libras.");
-        
-        teclado.close();
+        // TODO: Solicitar los kilogramos
+        // TODO: Multiplicar por 2.2 para obtener las libras
+        // TODO: Mostrar el resultado
     }
 }

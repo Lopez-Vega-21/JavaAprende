@@ -1,3 +1,7 @@
+/**
+ * RETO DEL GIMNASIO DE CÓDIGO (GUI - Nivel 2)
+ * Reto 5: Validador Visual de Par o Impar
+ */
 import javax.swing.*;
 import java.awt.FlowLayout;
 
@@ -10,21 +14,17 @@ public class ParImparVisual extends JFrame {
         setTitle("Validador Numérico");
         setSize(250, 150);
         setLayout(new FlowLayout());
-
+        
         cajaNumero = new JTextField(10);
         btnValidar = new JButton("Comprobar");
         etiquetaResultado = new JLabel("Esperando número...");
-
+        
         btnValidar.addActionListener(e -> {
-            int numero = Integer.parseInt(cajaNumero.getText());
-            
-            if (numero % 2 == 0) {
-                etiquetaResultado.setText("El número es par");
-            } else {
-                etiquetaResultado.setText("El número es impar");
-            }
+            // TODO 1: Obtener el texto de 'cajaNumero' y convertir a int
+            // TODO 2: Usar un if/else y el operador módulo (%) para saber si es par
+            // TODO 3: Mostrar el resultado en 'etiquetaResultado'
         });
-
+        
         add(new JLabel("Ingresa un número:"));
         add(cajaNumero); add(btnValidar); add(etiquetaResultado);
     }

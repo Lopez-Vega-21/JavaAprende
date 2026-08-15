@@ -1,8 +1,9 @@
+/**
+ * Reto 7: Conteo de Diez en Diez
+ * Descripción: Imprimir del 0 al 100 de diez en diez.
+ */
 public class DecenasHastaCien {
     public static void main(String[] args) {
-        System.out.println("Conteo de 0 a 100 de diez en diez:");
-        for (int i = 0; i <= 100; i += 10) {
-            System.out.println(i);
-        }
+        // TODO: Bucle for iniciando en 0, hasta 100, con incremento i += 10
     }
 }

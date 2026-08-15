@@ -1,3 +1,7 @@
+/**
+ * EJERCICIO GUIADO 1 
+ * Tema: Entrada de datos múltiples y jerarquía de operadores.
+ */
 import java.util.Scanner; 
 
 public class CalculadoraPromedio {
@@ -16,6 +20,7 @@ public class CalculadoraPromedio {
         System.out.print("Ingrese calificación 4: ");
         double cal4 = entrada.nextDouble();
         
+        // El paréntesis obliga a sumar todo antes de dividir
         double promedio = (cal1 + cal2 + cal3 + cal4) / 4.0;
         
         System.out.println("El promedio exacto es: " + promedio);

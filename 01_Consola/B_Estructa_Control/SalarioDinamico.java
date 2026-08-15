@@ -1,22 +1,10 @@
-import java.util.Scanner;
-
+/**
+ * Reto 2: Salario Obrero (Repaso de expresiones lógicas)
+ * Descripción: Recalcular el salario neto con 2% compensación y descuentos IMSS/ISPT.
+ */
 public class SalarioDinamico {
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
-        
-        System.out.print("Ingrese el salario base: ");
-        double salarioBase = teclado.nextDouble();
-        
-        if (salarioBase < 0) {
-            System.out.println("Error: El salario no puede ser negativo.");
-        } else {
-            double compensacion = salarioBase * 0.02;
-            double subtotal = salarioBase + compensacion;
-            double imss = subtotal * 0.05;
-            double ispt = subtotal * 0.03;
-            double salarioNeto = subtotal - (imss + ispt);
-            
-            System.out.println("Salario neto recalculado con compensación y descuentos: $" + salarioNeto);
-        }
+        // TODO: Replicar lógica del Ejercicio 13 básico pero añadiendo validaciones
+        // TODO: (Ej. Si el total es negativo, mostrar error)
     }
 }

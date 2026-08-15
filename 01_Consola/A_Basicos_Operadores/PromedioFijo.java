@@ -1,18 +1,11 @@
-import java.util.Scanner;
-
+/**
+ * Reto 10: Promedio de números estáticos
+ * Descripción: Calcular el promedio de: 19, 17, 21, 09, 12, 07.
+ */
 public class PromedioFijo {
     public static void main(String[] args) {
-        
-        double num1 = 19;
-        double num2 = 17;
-        double num3 = 21;
-        double num4 = 9;
-        double num5 = 12;
-        double num6 = 7;
-        
-        double suma = num1 + num2 + num3 + num4 + num5 + num6;
-        double promedio = suma / 6.0;
-        
-        System.out.println("El promedio es: " + promedio);
+        // TODO: Declarar variables para los 6 números o sumarlos directamente
+        // TODO: Calcular el promedio dividiendo entre 6.0
+        // TODO: Imprimir el resultado
     }
 }

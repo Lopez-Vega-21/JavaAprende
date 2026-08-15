@@ -1,18 +1,15 @@
+/**
+ * Reto 7: Desglose de Edad
+ * Descripción: Solicitar edad en años y mostrar décadas, lustros, meses, semanas, días, etc.
+ */
 import java.util.Scanner;
 
 public class CalculadoraEdad {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-
-        System.out.print("Ingresa tu edad en años: ");
-        int edad = teclado.nextInt();
-
-        System.out.println("Décadas: " + (edad / 10));
-        System.out.println("Lustros: " + (edad / 5));
-        System.out.println("Meses: " + (edad * 12));
-        System.out.println("Semanas: " + (edad * 52));
-        System.out.println("Días: " + (edad * 365));
-        System.out.println("Horas: " + (edad * 8760));
-        System.out.println("Minutos: " + (edad * 525600));
+        // TODO: Solicitar la edad en años
+        // TODO: Calcular décadas (años/10), lustros (años/5), meses (*12)
+        // TODO: Calcular semanas (*52), días (*365), horas (*8760), minutos (*525600)
+        // TODO: Mostrar la lista completa
     }
 }

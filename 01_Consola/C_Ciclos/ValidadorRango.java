@@ -1,18 +1,12 @@
+/**
+ * Reto 3: Validar Calificación
+ * Descripción: Pedir calificación. Si no está entre 0 y 10, volver a pedir.
+ */
 import java.util.Scanner;
 
 public class ValidadorRango {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        double calificacion;
-        
-        do {
-            System.out.print("Ingrese una calificación (entre 0 y 10): ");
-            calificacion = teclado.nextDouble();
-            if (calificacion < 0 || calificacion > 10) {
-                System.out.println("Calificación inválida. Intente de nuevo.");
-            }
-        } while (calificacion < 0 || calificacion > 10);
-        
-        System.out.println("Calificación aceptada: " + calificacion);
+        // TODO: Usar un ciclo do-while que se repita mientras la calificación sea < 0 o > 10
     }
 }

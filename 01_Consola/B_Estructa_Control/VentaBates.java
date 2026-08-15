@@ -1,20 +1,14 @@
+/**
+ * Reto 4: Venta de Bates
+ * Descripción: Precio $100 c/u, pero si son menos de 10 se venden a $108.
+ */
 import java.util.Scanner;
 
 public class VentaBates {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        
-        System.out.print("Ingrese la cantidad de bates comprados: ");
-        int cantidad = teclado.nextInt();
-        int precioUnitario;
-        
-        if (cantidad >= 10) {
-            precioUnitario = 100;
-        } else {
-            precioUnitario = 108;
-        }
-        
-        int costoTotal = cantidad * precioUnitario;
-        System.out.println("El costo total por " + cantidad + " bates es: $" + costoTotal);
+        // TODO: Solicitar cantidad de bates comprados
+        // TODO: Usar if para determinar si el precio es 100 o 108
+        // TODO: Mostrar el costo total
     }
-‎}
+}

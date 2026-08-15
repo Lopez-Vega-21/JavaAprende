@@ -1,4 +1,7 @@
-
+/**
+ * EJERCICIO GUIADO 2 
+ * Tema: Estructuras condicionales (if / else if) y operadores relacionales.
+ */
 import java.util.Scanner;
 
 public class TiendaBalones {
@@ -8,7 +11,8 @@ public class TiendaBalones {
         System.out.print("¿Cuántos balones desea comprar?: ");
         int cantidad = entrada.nextInt();
         int precioUnitario = 0; 
-    
+        
+        // Evaluamos las reglas de negocio
         if (cantidad > 15) {
             precioUnitario = 85;
         } else if (cantidad > 10 && cantidad <= 15) {
