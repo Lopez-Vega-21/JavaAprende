@@ -1,9 +1,3 @@
-/**
- * RETO DEL GIMNASIO DE CÓDIGO (GUI - Nivel 3)
- * Reto 8: Generador de Tablas de Multiplicar en JTextArea
- */
-
-
 import javax.swing.*;
 import java.awt.FlowLayout;
 
@@ -24,11 +18,12 @@ public class TablaMultiplicarVisual extends JFrame {
         areaResultados.setEditable(false);
         
         btnGenerar.addActionListener(e -> {
-            areaResultados.setText(""); // Limpiar antes de generar
+            areaResultados.setText(""); 
             
-            // TODO 1: Obtener el número de cajaNumero
-            // TODO 2: Crear un ciclo for del 1 al 10
-            // TODO 3: Usar areaResultados.append( numero + " x " + i + " = ... \n" )
+            int numero = Integer.parseInt(cajaNumero.getText());
+for (int i = 1; i <= 10; i++) {
+    areaResultados.append(numero + " x " + i + " = " + (numero * i) + "\n");
+}
         });
         
         add(new JLabel("Tabla del:")); add(cajaNumero);

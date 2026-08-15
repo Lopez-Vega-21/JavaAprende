@@ -1,12 +1,20 @@
-/**
- * Reto 13: Salario Neto del Trabajador
- * Descripción: 8h diarias, quincena, $50/h. +2% compensación, -1.5% IMSS, -1.2% ISPT.
- */
 public class SalarioObreroBasico {
     public static void main(String[] args) {
-        // TODO: Calcular el sueldo bruto (horas totales en quincena * precio por hora)
-        // TODO: Calcular los montos de compensación y descuentos
-        // TODO: Calcular el salario neto (Bruto + Compensación - IMSS - ISPT)
-        // TODO: Imprimir el resultado
+        
+        int horasDiarias = 8;
+        int diasQuincena = 15;
+        double precioHora = 50.0;
+        double sueldoBruto = (horasDiarias * diasQuincena) * precioHora;
+
+        
+        double compensacion = sueldoBruto * 0.02;
+        double imss = sueldoBruto * 0.015;
+        double ispt = sueldoBruto * 0.012;
+
+        
+        double salarioNeto = sueldoBruto + compensacion - imss - ispt;
+
+        System.out.println("Sueldo Bruto: " + sueldoBruto);
+        System.out.println("Salario Neto: " + salarioNeto);
     }
 }

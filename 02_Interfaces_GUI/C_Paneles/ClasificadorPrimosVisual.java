@@ -1,8 +1,3 @@
-/**
- * RETO DEL GIMNASIO DE CÓDIGO (GUI - Nivel 3)
- * Reto 9: Buscador de Números Primos del 1 al 100
- */
-
 import javax.swing.*;
 import java.awt.FlowLayout;
 
@@ -23,9 +18,18 @@ public class ClasificadorPrimosVisual extends JFrame {
         btnBuscar.addActionListener(e -> {
             areaResultados.setText("Primos encontrados:\n");
             
-            // TODO: Crear ciclo for del 2 al 100
-            // TODO: Validar si 'i' es primo
-            // TODO: Si es primo, agregarlo al área de texto con areaResultados.append(i + ", ");
+            for (int i = 2; i <= 100; i++) {
+    boolean esPrimo = true;
+    for (int j = 2; j <= i - 1; j++) {
+        if (i % j == 0) {
+            esPrimo = false;
+            break;
+        }
+    }
+    if (esPrimo) {
+        areaResultados.append(i + ", ");
+    }
+}
         });
         
         add(btnBuscar); add(new JScrollPane(areaResultados));

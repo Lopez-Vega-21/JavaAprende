@@ -1,14 +1,14 @@
-/**
- * Reto 18: Grados Centígrados a Fahrenheit
- * Descripción: Fórmula: (C × 9/5) + 32 = F.
- */
 import java.util.Scanner;
 
 public class CelsiusFahrenheit {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        // TODO: Solicitar grados Celsius
-        // TODO: Aplicar la fórmula respetando la precedencia de operadores
-        // TODO: Imprimir resultado
+
+        System.out.print("Ingresa la temperatura en grados Celsius: ");
+        double celsius = teclado.nextDouble();
+
+        double fahrenheit = (celsius * 9.0 / 5.0) + 32;
+
+        System.out.println(celsius + "°C equivalen a " + fahrenheit + "°F.");
     }
 }
